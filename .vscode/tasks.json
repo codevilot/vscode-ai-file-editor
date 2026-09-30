@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "AI Editor: Build",
+      "label": "Ai Illustrator File Editor: Build",
       "type": "npm",
       "script": "compile",
       "problemMatcher": "$tsc",
@@ -11,7 +11,7 @@
       }
     },
     {
-      "label": "AI Editor: Watch",
+      "label": "Ai Illustrator File Editor: Watch",
       "type": "npm",
       "script": "watch",
       "isBackground": true,

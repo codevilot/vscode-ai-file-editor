@@ -1,13 +1,14 @@
 {
-  "name": "ai-file-editor",
-  "displayName": "AI File Editor",
+  "name": "ai-illustrator-file-editor",
+  "displayName": "Ai Illustrator File Editor",
   "description": "Preview and safely edit Adobe Illustrator-compatible AI files inside VS Code.",
   "version": "0.1.0",
   "publisher": "codevilot",
   "license": "MIT",
+  "icon": "assets/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codevilot/vscode-ai-file-editor.git"
+    "url": "https://github.com/codevilot/vscode-ai-illustrator-file-editor.git"
   },
   "engines": {
     "vscode": "^1.85.0"
@@ -32,7 +33,7 @@
     "customEditors": [
       {
         "viewType": "aiEditor.editor",
-        "displayName": "AI File Editor",
+        "displayName": "Ai Illustrator File Editor",
         "selector": [
           {
             "filenamePattern": "*.ai"
@@ -44,7 +45,7 @@
     "commands": [
       {
         "command": "aiEditor.openWith",
-        "title": "AI File Editor: Open with Visual Editor"
+        "title": "Ai Illustrator File Editor: Open with Visual Editor"
       }
     ],
     "menus": {

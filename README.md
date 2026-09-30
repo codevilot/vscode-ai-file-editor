@@ -1,4 +1,4 @@
-# AI File Editor for VS Code
+# Ai Illustrator File Editor for VS Code
 
 Edit PDF-compatible Adobe Illustrator (`.ai`) files without leaving VS Code.
 
@@ -19,7 +19,7 @@ This extension follows the React webview and esbuild architecture used by
 ## Data safety
 
 Illustrator's private editing stream is proprietary and can be damaged by a
-third-party PDF writer. AI File Editor therefore keeps the source `.ai` untouched.
+third-party PDF writer. Ai Illustrator File Editor therefore keeps the source `.ai` untouched.
 
 - `Cmd/Ctrl+S` saves editable overlay data to `<file>.ai.ai-editor.json`.
 - **Export PDF** writes a new `<file>.edited.pdf`.

@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run AI File Editor",
+      "name": "Run Ai Illustrator File Editor",
       "type": "pwa-extensionHost",
       "request": "launch",
       "noDebug": true,
@@ -16,7 +16,7 @@
       "outFiles": [
         "${workspaceFolder}/dist/**/*.js"
       ],
-      "preLaunchTask": "AI Editor: Build"
+      "preLaunchTask": "Ai Illustrator File Editor: Build"
     }
   ]
 }

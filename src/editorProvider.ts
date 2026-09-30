@@ -53,7 +53,7 @@ export class AiEditorProvider implements vscode.CustomEditorProvider<AiDocument>
       } catch (error) {
         const detail = error instanceof Error ? error.message : String(error);
         this.post(panel, { type: "error", message: detail });
-        void vscode.window.showErrorMessage(`AI Editor: ${detail}`);
+        void vscode.window.showErrorMessage(`Ai Illustrator File Editor: ${detail}`);
       }
     });
 
@@ -176,7 +176,7 @@ export class AiEditorProvider implements vscode.CustomEditorProvider<AiDocument>
     await vscode.workspace.fs.writeFile(destination, output);
     this.post(panel, { type: "exported", path: destination.fsPath });
     void vscode.window.showInformationMessage(
-      `AI Editor: Exported ${path.basename(destination.fsPath)}`,
+      `Ai Illustrator File Editor: Exported ${path.basename(destination.fsPath)}`,
     );
   }
 
@@ -213,7 +213,7 @@ export class AiEditorProvider implements vscode.CustomEditorProvider<AiDocument>
     <meta http-equiv="Content-Security-Policy" content="${csp}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="${styleUri}" />
-    <title>AI Editor</title>
+    <title>Ai Illustrator File Editor</title>
   </head>
   <body>
     <div id="root"><div class="loading">Opening Illustrator document…</div></div>
