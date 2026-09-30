@@ -1,0 +1,81 @@
+{
+  "name": "ai-file-editor",
+  "displayName": "AI File Editor",
+  "description": "Preview and safely edit Adobe Illustrator-compatible AI files inside VS Code.",
+  "version": "0.1.0",
+  "publisher": "codevilot",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codevilot/vscode-ai-file-editor.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "illustrator",
+    "ai",
+    "pdf",
+    "vector",
+    "design"
+  ],
+  "main": "./dist/extension.js",
+  "activationEvents": [
+    "onCustomEditor:aiEditor.editor",
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "aiEditor.editor",
+        "displayName": "AI File Editor",
+        "selector": [
+          {
+            "filenamePattern": "*.ai"
+          }
+        ],
+        "priority": "default"
+      }
+    ],
+    "commands": [
+      {
+        "command": "aiEditor.openWith",
+        "title": "AI File Editor: Open with Visual Editor"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "aiEditor.openWith",
+          "when": "resourceExtname == .ai",
+          "group": "navigation@10"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "build": "node esbuild.js --production",
+    "compile": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "check": "tsc --noEmit",
+    "package": "npm run build && vsce package",
+    "vscode:prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.6.0",
+    "esbuild": "^0.25.10",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.3.289",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "typescript": "^5.9.2"
+  }
+}

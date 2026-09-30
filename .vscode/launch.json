@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run AI File Editor",
+      "type": "pwa-extensionHost",
+      "request": "launch",
+      "noDebug": true,
+      "debugWebviews": false,
+      "debugWebWorkerHost": false,
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}",
+        "${workspaceFolder}"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"
+      ],
+      "preLaunchTask": "AI Editor: Build"
+    }
+  ]
+}

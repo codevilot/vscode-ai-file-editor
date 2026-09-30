@@ -1,0 +1,13 @@
+.gitignore
+.vscode/**
+src/**
+webview/**
+tsconfig.json
+esbuild.js
+*.ai
+*.ai-editor.json
+*.edited.pdf
+node_modules/@types/**
+node_modules/typescript/**
+node_modules/esbuild/**
+dist/*.map

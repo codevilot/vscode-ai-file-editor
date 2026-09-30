@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.cwd": "${workspaceFolder}",
+  "workbench.editorAssociations": {
+    "*.ai": "aiEditor.editor"
+  }
+}
